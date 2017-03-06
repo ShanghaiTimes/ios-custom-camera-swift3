@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomCamera" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Draw_To_Jack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,39 +22,54 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgU-5n-KAz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Custom Camera" id="ilB-i7-RrG"/>
+                                    <navigationItem title="Draw to Jack" id="ilB-i7-RrG"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-hc-3as">
-                                <rect key="frame" x="16" y="44" width="343" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImgOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-hc-3as">
+                                <rect key="frame" x="-82.5" y="-146.5" width="540" height="960"/>
                             </imageView>
-                            <button opaque="NO" contentMode="bottom" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHk-bq-Our">
-                                <rect key="frame" x="167" y="607" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="bottom" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHk-bq-Our">
+                                <rect key="frame" x="177.5" y="607" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2b0-dD-4CL"/>
+                                    <constraint firstAttribute="width" constant="20" id="7cw-k4-snk"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="ImgCameraCaptureBtn"/>
                                 <connections>
                                     <action selector="actionCameraCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFY-sy-mrx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0TS-Go-k1s" userLabel="shapeLayer">
+                                <rect key="frame" x="1" y="0.0" width="767" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FHk-bq-Our" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8LC-We-UmS"/>
+                            <constraint firstItem="0hS-hc-3as" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E7S-Vn-d8Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FHk-bq-Our" secondAttribute="bottom" constant="40" id="JAN-8r-pyY"/>
+                            <constraint firstItem="0hS-hc-3as" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxM-Hy-jUD"/>
+                            <constraint firstItem="0hS-hc-3as" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SXh-Tg-Hdt"/>
+                            <constraint firstItem="0hS-hc-3as" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jTj-a9-bXW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnCapture" destination="FHk-bq-Our" id="cd0-Od-h5E"/>
                         <outlet property="imgOverlay" destination="0hS-hc-3as" id="Pf9-SE-RNc"/>
                         <outlet property="navigationBar" destination="CgU-5n-KAz" id="KQt-70-Y82"/>
+                        <outlet property="shapeLayer" destination="0TS-Go-k1s" id="kex-QA-qof"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="117.1875" y="121.87499999999999"/>
         </scene>
     </scenes>
     <resources>
         <image name="ImgCameraCaptureBtn" width="102" height="102"/>
-        <image name="ImgOverlay" width="320" height="568"/>
+        <image name="ImgOverlay" width="540" height="960"/>
     </resources>
 </document>

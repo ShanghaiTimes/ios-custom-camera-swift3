@@ -14,6 +14,7 @@
 		C779EB4F1DA625B800BFF796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C779EB4D1DA625B800BFF796 /* LaunchScreen.storyboard */; };
 		C779EB5A1DA625B900BFF796 /* CustomCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C779EB591DA625B900BFF796 /* CustomCameraTests.swift */; };
 		C779EB651DA625B900BFF796 /* CustomCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C779EB641DA625B900BFF796 /* CustomCameraUITests.swift */; };
+		E1CAA8271E6852C20084AFD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CAA8261E6852C20084AFD1 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C779EB411DA625B800BFF796 /* CustomCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C779EB411DA625B800BFF796 /* Draw To Jack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Draw To Jack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C779EB441DA625B800BFF796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C779EB461DA625B800BFF796 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C779EB491DA625B800BFF796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C779EB4B1DA625B800BFF796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C779EB4E1DA625B800BFF796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C779EB501DA625B800BFF796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C779EB551DA625B900BFF796 /* CustomCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C779EB551DA625B900BFF796 /* Draw To JackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Draw To JackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C779EB591DA625B900BFF796 /* CustomCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraTests.swift; sourceTree = "<group>"; };
 		C779EB5B1DA625B900BFF796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C779EB601DA625B900BFF796 /* CustomCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C779EB601DA625B900BFF796 /* Draw To JackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Draw To JackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C779EB641DA625B900BFF796 /* CustomCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraUITests.swift; sourceTree = "<group>"; };
 		C779EB661DA625B900BFF796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1CAA8261E6852C20084AFD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CAA8271E6852C20084AFD1 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,15 +84,16 @@
 				C779EB581DA625B900BFF796 /* CustomCameraTests */,
 				C779EB631DA625B900BFF796 /* CustomCameraUITests */,
 				C779EB421DA625B800BFF796 /* Products */,
+				E1CAA8251E6852C20084AFD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		C779EB421DA625B800BFF796 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C779EB411DA625B800BFF796 /* CustomCamera.app */,
-				C779EB551DA625B900BFF796 /* CustomCameraTests.xctest */,
-				C779EB601DA625B900BFF796 /* CustomCameraUITests.xctest */,
+				C779EB411DA625B800BFF796 /* Draw To Jack.app */,
+				C779EB551DA625B900BFF796 /* Draw To JackTests.xctest */,
+				C779EB601DA625B900BFF796 /* Draw To JackUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,12 +129,20 @@
 			path = CustomCameraUITests;
 			sourceTree = "<group>";
 		};
+		E1CAA8251E6852C20084AFD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CAA8261E6852C20084AFD1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C779EB401DA625B800BFF796 /* CustomCamera */ = {
+		C779EB401DA625B800BFF796 /* Draw To Jack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C779EB691DA625B900BFF796 /* Build configuration list for PBXNativeTarget "CustomCamera" */;
+			buildConfigurationList = C779EB691DA625B900BFF796 /* Build configuration list for PBXNativeTarget "Draw To Jack" */;
 			buildPhases = (
 				C779EB3D1DA625B800BFF796 /* Sources */,
 				C779EB3E1DA625B800BFF796 /* Frameworks */,
@@ -140,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = CustomCamera;
+			name = "Draw To Jack";
 			productName = CustomCamera;
-			productReference = C779EB411DA625B800BFF796 /* CustomCamera.app */;
+			productReference = C779EB411DA625B800BFF796 /* Draw To Jack.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C779EB541DA625B900BFF796 /* CustomCameraTests */ = {
+		C779EB541DA625B900BFF796 /* Draw To JackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C779EB6C1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "CustomCameraTests" */;
+			buildConfigurationList = C779EB6C1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "Draw To JackTests" */;
 			buildPhases = (
 				C779EB511DA625B900BFF796 /* Sources */,
 				C779EB521DA625B900BFF796 /* Frameworks */,
@@ -158,14 +170,14 @@
 			dependencies = (
 				C779EB571DA625B900BFF796 /* PBXTargetDependency */,
 			);
-			name = CustomCameraTests;
+			name = "Draw To JackTests";
 			productName = CustomCameraTests;
-			productReference = C779EB551DA625B900BFF796 /* CustomCameraTests.xctest */;
+			productReference = C779EB551DA625B900BFF796 /* Draw To JackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C779EB5F1DA625B900BFF796 /* CustomCameraUITests */ = {
+		C779EB5F1DA625B900BFF796 /* Draw To JackUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C779EB6F1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "CustomCameraUITests" */;
+			buildConfigurationList = C779EB6F1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "Draw To JackUITests" */;
 			buildPhases = (
 				C779EB5C1DA625B900BFF796 /* Sources */,
 				C779EB5D1DA625B900BFF796 /* Frameworks */,
@@ -176,9 +188,9 @@
 			dependencies = (
 				C779EB621DA625B900BFF796 /* PBXTargetDependency */,
 			);
-			name = CustomCameraUITests;
+			name = "Draw To JackUITests";
 			productName = CustomCameraUITests;
-			productReference = C779EB601DA625B900BFF796 /* CustomCameraUITests.xctest */;
+			productReference = C779EB601DA625B900BFF796 /* Draw To JackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C779EB3C1DA625B800BFF796 /* Build configuration list for PBXProject "CustomCamera" */;
+			buildConfigurationList = C779EB3C1DA625B800BFF796 /* Build configuration list for PBXProject "Draw To Jack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,9 +238,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C779EB401DA625B800BFF796 /* CustomCamera */,
-				C779EB541DA625B900BFF796 /* CustomCameraTests */,
-				C779EB5F1DA625B900BFF796 /* CustomCameraUITests */,
+				C779EB401DA625B800BFF796 /* Draw To Jack */,
+				C779EB541DA625B900BFF796 /* Draw To JackTests */,
+				C779EB5F1DA625B900BFF796 /* Draw To JackUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,12 +303,12 @@
 /* Begin PBXTargetDependency section */
 		C779EB571DA625B900BFF796 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C779EB401DA625B800BFF796 /* CustomCamera */;
+			target = C779EB401DA625B800BFF796 /* Draw To Jack */;
 			targetProxy = C779EB561DA625B900BFF796 /* PBXContainerItemProxy */;
 		};
 		C779EB621DA625B900BFF796 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C779EB401DA625B800BFF796 /* CustomCamera */;
+			target = C779EB401DA625B800BFF796 /* Draw To Jack */;
 			targetProxy = C779EB611DA625B900BFF796 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.faya.CustomCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -439,6 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.faya.CustomCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -453,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.faya.CustomCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCamera.app/CustomCamera";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draw To Jack.app/Draw To Jack";
 			};
 			name = Debug;
 		};
@@ -468,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.faya.CustomCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCamera.app/CustomCamera";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draw To Jack.app/Draw To Jack";
 			};
 			name = Release;
 		};
@@ -503,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C779EB3C1DA625B800BFF796 /* Build configuration list for PBXProject "CustomCamera" */ = {
+		C779EB3C1DA625B800BFF796 /* Build configuration list for PBXProject "Draw To Jack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C779EB671DA625B900BFF796 /* Debug */,
@@ -512,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C779EB691DA625B900BFF796 /* Build configuration list for PBXNativeTarget "CustomCamera" */ = {
+		C779EB691DA625B900BFF796 /* Build configuration list for PBXNativeTarget "Draw To Jack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C779EB6A1DA625B900BFF796 /* Debug */,
@@ -521,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C779EB6C1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "CustomCameraTests" */ = {
+		C779EB6C1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "Draw To JackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C779EB6D1DA625B900BFF796 /* Debug */,
@@ -530,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C779EB6F1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "CustomCameraUITests" */ = {
+		C779EB6F1DA625B900BFF796 /* Build configuration list for PBXNativeTarget "Draw To JackUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C779EB701DA625B900BFF796 /* Debug */,

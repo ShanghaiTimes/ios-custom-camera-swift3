@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CustomCamera.xcodeproj">
+      location = "self:/Users/robert/Documents/GitHub/ios-custom-camera-swift3/Draw To Jack.xcodeproj">
    </FileRef>
 </Workspace>
